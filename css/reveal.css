@@ -1331,4 +1331,7 @@ html:-moz-full-screen-ancestor {
 
 .reveal section img.es6-logo {
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  box-shadow: none;
+  height: 5em;
+  width: 5em; }
