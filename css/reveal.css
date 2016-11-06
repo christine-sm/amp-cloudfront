@@ -1149,7 +1149,6 @@ html:-moz-full-screen-ancestor {
 .reveal .overlay .viewport {
   position: absolute;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   top: 40px;
@@ -1329,3 +1328,7 @@ html:-moz-full-screen-ancestor {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+.reveal section img.es6-logo {
+  border: none;
+  background-color: transparent; }
