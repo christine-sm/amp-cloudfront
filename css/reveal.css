@@ -1329,9 +1329,22 @@ html:-moz-full-screen-ancestor {
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
 
-.reveal section img.es6-logo {
+.reveal section img.remove-border {
   border: none;
   background-color: transparent;
-  box-shadow: none;
-  height: 5em;
-  width: 5em; }
+  box-shadow: none; }
+
+.reveal section img.thumbnail-imgs {
+  height: 7em;
+  width: 7em;
+  margin: 1em; }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
