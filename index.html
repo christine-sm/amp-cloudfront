@@ -133,7 +133,7 @@ function letExample() {
 					<h2><b><code>const</code></b></h2>
 					<ul>
 						<li class='fragment'>The value of <b><code>const</code></b> is <q>never reassigned</q></li>
-						<li class='fragment'>Does not necessarily mean than <b><code>const</code></b> is <q>purely immutable</q></li>
+						<li class='fragment'>Does not necessarily mean than <b><code>const</code></b> is <q>immutable</q></li>
 						<li class='fragment'>Properties of <b><code>const</code></b> <q>can change</q></li>
 						<li class='fragment'>Use <b><code>Object.freeze()</code></b> if you want to make an immutable object</li>
 					</ul>
@@ -144,6 +144,22 @@ const exampleObject = {
 	month: 'December',
 	days: 31
 };
+					</code></pre>
+				</section>
+
+				<!-- Template Strings Overview and Example -->
+				<section>
+					<h2><b><code>`${Template Strings}`</code></b></h2>
+					<ul class='fragment'>
+						<li>Use <b><code>``</code></b> instead of <b><code>''</code></b></li>
+						<li>Use <b><code>${}</code></b> for <q>data interpolation</q></li>
+					</ul>
+					<pre><code class="hljs fragment" data-trim contenteditable>
+const fullName = `Slim Shady`;
+
+const oldString = 'My name is ' + fullName;
+
+const newString = `My name is ${fullName}`;
 					</code></pre>
 				</section>
 
