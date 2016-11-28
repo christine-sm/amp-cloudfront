@@ -147,6 +147,11 @@ const exampleObject = {
 					</code></pre>
 				</section>
 
+				<!-- let vs const -->
+				<section>
+					<h2><b><code>let</code></b> vs. <b><code>const</code></b></h2>
+				</section>
+
 				<!-- Template Strings Overview and Example -->
 				<section>
 					<h2><b><code>`${Template Strings}`</code></b></h2>
@@ -160,6 +165,27 @@ const fullName = `Slim Shady`;
 const oldString = 'My name is ' + fullName;
 
 const newString = `My name is ${fullName}`;
+					</code></pre>
+				</section>
+
+				<!-- Arrow Functions Overview and Example -->
+				<section>
+					<h2>Arrow Functions</h2>
+					<h2><b><code>= () =></code></b></h2>
+					<ul class='fragment'>
+						<li>Binds <b><code>this</code></b> to <q>parent scope</q></li>
+						<li>Remember: anonymous functions bind <b><code>this</code></b> to <q>element</q></li>
+						<!-- <li class='fragment'>Implicit <q>or</q> explicit <b><code>return</code></b>, depending on its usage</li> -->
+					</ul>
+					<pre><code class="hljs fragment" data-trim contenteditable>
+<div id='#exampleDiv'></div>
+var exampleDiv = document.querySelector('#exampleDiv');
+
+exampleDiv.addEventListener('click', function() {
+  return this;
+});
+
+const arrowExample = () => this;
 					</code></pre>
 				</section>
 
