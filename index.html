@@ -169,21 +169,47 @@ const newString = `My name is ${fullName}`;
 					</code></pre>
 				</section>
 
-				<!-- Arrow Functions Overview and Example -->
+				<!-- Arrow Functions Overview and this Example -->
 				<section>
 					<h2>Arrow Functions</h2>
 					<h2><b><code>= () =></code></b></h2>
 					<ul class='fragment'>
-						<li>Does <q>not</q> rebind value of <b><code>this</code></b></li>
+						<li>Does <q>not</q> rebind value of <b><code>this</code>; <code>this</code></b> bound to <q>parent scope</q></li>
 						<li>Remember: traditional anonymous functions bind <b><code>this</code></b> to <q>element</q></li>
 					</ul>
 					<div class='fragment'>
-						<button id='exampleButton'>Example</button>
+						<div class='flex'>
+							<button class='exampleButton' id='exampleButtonOne'>Example 1</button>
+							<button class='exampleButton' id='exampleButtonTwo'>Example 2</button>
+						</div>
+						<pre><code class="hljs" data-trim contenteditable>
+var exampleButtonOne = document.querySelector('#exampleButtonOne');
+
+exampleButtonOne.addEventListener('click', function() {
+  console.log(this);
+});
+
+exampleButtonOne.addEventListener('click', () => {
+  console.log(this);
+});
+						</code></pre>
+					</div>
+				</section>
+
+				<!-- Arrow Functions Overview and Example -->
+				<section>
+					<h2>Arrow Functions (cont.)</h2>
+					<ul class='fragment'>
+						<li>Concise syntax</li>
+						<li><b><code>Implicit</code></b> return for unbracketed functions</li>
+					</ul>
+					<div class='fragment'>
+						<button class='exampleButton'>Example</button>
 						<pre><code class="hljs" data-trim contenteditable>
 var exampleButton = document.querySelector('#exampleButton');
 
 exampleButton.addEventListener('click', function() {
-  console.log(this);
+	console.log(this);
 });
 
 exampleButton.addEventListener('click', () => {
