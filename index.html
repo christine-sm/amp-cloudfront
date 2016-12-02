@@ -30,6 +30,7 @@
 					<h1>ES6 Essentials</h1>
 					<img class='thumbnail-imgs remove-border' src='http://devstickers.com/assets/img/pro/i0dq.png' alt='es6-logo'>
 					<p><q>An introduction to ES6 features you can easily use in JavaScript today</q></p>
+					<a href='http://www.christinemovius.com/es6-dcjs'>christinemovius.com/es6-dcjs</a>
 				</section>
 
 				<!-- Bio Slide -->
@@ -173,20 +174,23 @@ const newString = `My name is ${fullName}`;
 					<h2>Arrow Functions</h2>
 					<h2><b><code>= () =></code></b></h2>
 					<ul class='fragment'>
-						<li>Binds <b><code>this</code></b> to <q>parent scope</q></li>
-						<li>Remember: anonymous functions bind <b><code>this</code></b> to <q>element</q></li>
-						<!-- <li class='fragment'>Implicit <q>or</q> explicit <b><code>return</code></b>, depending on its usage</li> -->
+						<li>Does <q>not</q> rebind value of <b><code>this</code></b></li>
+						<li>Remember: traditional anonymous functions bind <b><code>this</code></b> to <q>element</q></li>
 					</ul>
-					<pre><code class="hljs fragment" data-trim contenteditable>
-<div id='#exampleDiv'></div>
-var exampleDiv = document.querySelector('#exampleDiv');
+					<div class='fragment'>
+						<button id='exampleButton'>Example</button>
+						<pre><code class="hljs" data-trim contenteditable>
+var exampleButton = document.querySelector('#exampleButton');
 
-exampleDiv.addEventListener('click', function() {
-  return this;
+exampleButton.addEventListener('click', function() {
+  console.log(this);
 });
 
-const arrowExample = () => this;
-					</code></pre>
+exampleButton.addEventListener('click', () => {
+	console.log(this);
+});
+						</code></pre>
+					</div>
 				</section>
 
 				<section>
