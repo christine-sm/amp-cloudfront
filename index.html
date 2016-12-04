@@ -180,7 +180,7 @@ const newString = `My name is ${fullName}`;
 				<!-- Arrow Functions Overview and this Example -->
 				<section>
 					<h2>Arrow Functions</h2>
-					<h2><b><code>= () =></code></b></h2>
+					<h2><b><code>() =></code></b></h2>
 					<ul class='fragment'>
 						<li>Does <q>not</q> rebind value of <b><code>this</code>; <code>this</code></b> bound to <q>parent scope</q></li>
 						<li>Remember: traditional anonymous functions bind <b><code>this</code></b> to <q>element</q></li>
@@ -208,7 +208,7 @@ exampleButtonTwo.addEventListener('click', () => {
 					</div>
 				</section>
 
-				<!-- Arrow Functions Overview and Example -->
+				<!-- Turn Anonymous Function into Arrow Function -->
 				<section>
 					<h2>Arrow Functions (cont.)</h2>
 					<ul class='fragment'>
@@ -216,17 +216,12 @@ exampleButtonTwo.addEventListener('click', () => {
 						<li><b><code>Implicit</code></b> return for unbracketed functions</li>
 					</ul>
 					<div class='fragment'>
-						<button class='exampleButton'>Example</button>
 						<pre><code class="hljs" data-trim contenteditable>
-var exampleButton = document.querySelector('#exampleButton');
+// Make it an ES6 arrow function!
 
-exampleButton.addEventListener('click', function() {
-	console.log(this);
-});
-
-exampleButton.addEventListener('click', () => {
-	console.log(this);
-});
+function introduceMe (name, job) {
+  return 'My name is ' + name + ' and I am a(n) ' + job;
+}
 						</code></pre>
 					</div>
 				</section>
