@@ -226,6 +226,28 @@ function introduceMe (name, job) {
 					</div>
 				</section>
 
+				<!-- Default Function Parameters -->
+				<section>
+					<h2>Default Function Parameters</h2>
+					<ul class='fragment'>
+						<li>Function parameters can be assigned a default value</li>
+					</ul>
+					<div class='fragment'>
+						<pre><code class="hljs" data-trim contenteditable>
+
+const introduceYou = (name, job, vowel = false) => {
+  let article;
+  if (vowel) {
+    article = 'an';
+  } else if (!vowel) {
+    article = 'a';
+  }
+  return `My name is ${name} and I am ${article} ${job}`;
+}
+						</code></pre>
+					</div>
+				</section>
+
 				<!-- Wes Bos Slide -->
 				<section>
 					<h2>Want to learn more about ES6?</h2>
