@@ -89,7 +89,13 @@
 						<li>Variables declared with <b><code>let</code></b> are <q>block</q> scoped <b><code>{}</code></b></li>
 					</ul>
 					<pre><code class="hljs fragment" data-trim contenteditable>
+function scopeExample() {
+  // function scoped
+}
 
+if () {
+  // block scoped
+}
 					</code></pre>
 				</section>
 
@@ -102,7 +108,7 @@ function varExample() {
   if (centimeters > 100) {
     var meters = centimeters / 100;
   }
-  console.log(meters);
+  return meters;
 }
 					</code></pre>
 					<ul class='fragment'>
@@ -120,7 +126,7 @@ function letExample() {
   if (centimeters > 100) {
     let meters = centimeters / 100;
   }
-  console.log(meters);
+  return meters;
 }
 					</code></pre>
 					<ul class='fragment'>
@@ -163,8 +169,10 @@ const exampleObject = {
 					<pre><code class="hljs fragment" data-trim contenteditable>
 const fullName = `Slim Shady`;
 
-const oldString = 'My name is ' + fullName;
+// ES5 Template String
+var oldString = 'My name is ' + fullName;
 
+// ES6 Template String
 const newString = `My name is ${fullName}`;
 					</code></pre>
 				</section>
@@ -183,13 +191,17 @@ const newString = `My name is ${fullName}`;
 							<button class='exampleButton' id='exampleButtonTwo'>Example 2</button>
 						</div>
 						<pre><code class="hljs" data-trim contenteditable>
+// ES5 Anonymous Function
 var exampleButtonOne = document.querySelector('#exampleButtonOne');
 
 exampleButtonOne.addEventListener('click', function() {
   console.log(this);
 });
 
-exampleButtonOne.addEventListener('click', () => {
+// ES6 Arrow Function
+const exampleButtonTwo = document.querySelector('#exampleButtonTwo');
+
+exampleButtonTwo.addEventListener('click', () => {
   console.log(this);
 });
 						</code></pre>
