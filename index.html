@@ -229,9 +229,9 @@ function introduceMe (name, job) {
 				<!-- Default Function Parameters -->
 				<section>
 					<h2>Default Function Parameters</h2>
-					<ul class='fragment'>
-						<li>Function parameters can be assigned a default value</li>
-					</ul>
+					<p class='fragment'>
+						Function parameters can be assigned a default value
+					</p>
 					<div class='fragment'>
 						<pre><code class="hljs" data-trim contenteditable>
 
@@ -244,6 +244,46 @@ const introduceYou = (name, job, vowel = false) => {
   }
   return `My name is ${name} and I am ${article} ${job}`;
 }
+						</code></pre>
+					</div>
+				</section>
+
+				<!-- Spread Slide 1 -->
+				<section>
+					<h2>...Spread</h2>
+					<p class='fragment'>
+						Allows an expression to be expanded in places where multiple arguments, elements, or variables are expected
+					</p>
+					<div class='fragment'>
+						<pre><code class="hljs" data-trim contenteditable>
+// Multiple Arguments Expected
+
+function myFunction(x, y, z) { }
+
+const args = [0, 1, 2];
+
+myFunction(...args);
+						</code></pre>
+					</div>
+				</section>
+
+				<!-- Spread Slide 2 -->
+				<section>
+					<h2>...Spread</h2>
+					<p class='fragment'>
+						Combine arrays more easily
+					</p>
+					<div class='fragment'>
+						<pre><code class="hljs" data-trim contenteditable>
+var arr1 = [0, 1, 2];
+var arr2 = [3, 4, 5];
+// Append all items from arr2 onto arr1
+Array.prototype.push.apply(arr1, arr2);
+
+// In ES2015 with spread this becomes:
+var arr1 = [0, 1, 2];
+var arr2 = [3, 4, 5];
+arr1.push(...arr2);
 						</code></pre>
 					</div>
 				</section>
