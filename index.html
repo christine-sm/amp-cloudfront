@@ -51,11 +51,11 @@
 				<!-- ES/ECMA Definition -->
 				<section>
 					<h2>... ES? What is that?</h2>
+					<h3 class='fragment'>ECMAScript</h3>
 					<ul class='fragment'>
-						<li>ES: ECMAScript</li>
-						<li>ECMA: European Computer Manufacturer's Association</li>
+						<li>The <q>standardized</q> version of JavaScript is called ECMAScript</li>
+						<li>ECMA: formerly an acronym for European Computer Manufacturer's Association (now Ecma International)</li>
 					</ul>
-					<p class='fragment'>ECMAScript is a standard for scripting languages. Languages like JavaScript are <b><q>based on</q></b> the ECMAScript standard.</p>
 				</section>
 
 				<!-- ES6 Feature Overview -->
@@ -66,11 +66,7 @@
 						<li>Template Strings <code>`${woot woot}`</code></li>
 						<li>Arrow Functions <code>=></code></li>
 						<li>Default Function Parameters</li>
-						<li>Classes</li>
-						<li>Iterables</li>
 						<li>...Spread &amp; ...Rest</li>
-						<li>Array &amp; Object Destructuring</li>
-						<li>Object Initializer Shorthand</li>
 						<li>And More!</li>
 					</ul>
 				</section>
@@ -139,6 +135,7 @@ function letExample() {
 				<section>
 					<h2><b><code>const</code></b></h2>
 					<ul class='fragment'>
+						<li>Also <q>block scoped</q> like <b><code>let</code></b></li>
 						<li>The value of <b><code>const</code></b> is <q>never reassigned</q></li>
 						<li>Does not necessarily mean than <b><code>const</code></b> is <q>immutable</q></li>
 						<li>Properties of <b><code>const</code></b> <q>can change</q></li>
@@ -148,8 +145,8 @@ function letExample() {
 const exampleArray = [1, 2, 3];
 
 const exampleObject = {
-	month: 'December',
-	days: 31
+  month: 'December',
+  days: 31
 };
 					</code></pre>
 				</section>
@@ -180,10 +177,11 @@ const newString = `My name is ${fullName}`;
 				<!-- Arrow Functions Overview and this Example -->
 				<section>
 					<h2>Arrow Functions</h2>
-					<h2><b><code>() =></code></b></h2>
+					<h3><b><code>() =></code></b></h3>
 					<ul class='fragment'>
 						<li>Does <q>not</q> rebind value of <b><code>this</code>; <code>this</code></b> bound to <q>parent scope</q></li>
 						<li>Remember: traditional anonymous functions bind <b><code>this</code></b> to <q>element</q></li>
+						<li>No need for <b><code>var self = this</code></b> anymore!</li>
 					</ul>
 					<div class='fragment'>
 						<div class='flex'>
@@ -258,11 +256,11 @@ const introduceYou = (name, job, vowel = false) => {
 						<pre><code class="hljs" data-trim contenteditable>
 // Multiple Arguments Expected
 
-function myFunction(x, y, z) { }
+function spreadFunction(x, y, z) { }
 
 const args = [0, 1, 2];
 
-myFunction(...args);
+spreadFunction(...args);
 						</code></pre>
 					</div>
 				</section>
@@ -273,19 +271,24 @@ myFunction(...args);
 					<p class='fragment'>
 						Combine arrays more easily
 					</p>
-					<div class='fragment'>
-						<pre><code class="hljs" data-trim contenteditable>
-var arr1 = [0, 1, 2];
-var arr2 = [3, 4, 5];
-// Append all items from arr2 onto arr1
+					<pre><code class="hljs fragment" data-trim contenteditable>
+let arr1 = [0, 1, 2];
+let arr2 = [3, 4, 5];
+
+// Append items from arr2 into arr1 using ES5
+arr1.push(arr2);
+
+// What's wrong here?
+					</code></pre>
+					<pre><code class="hljs fragment" data-trim contenteditable>
+arr1 = [0, 1, 2];
+
+// Append items from arr2 into arr1 using ES5
 Array.prototype.push.apply(arr1, arr2);
 
-// In ES2015 with spread this becomes:
-var arr1 = [0, 1, 2];
-var arr2 = [3, 4, 5];
+// Append items from arr2 into arr1 using ES6
 arr1.push(...arr2);
-						</code></pre>
-					</div>
+					</code></pre>
 				</section>
 
 				<!-- Cat GIF/Babel Slide -->
