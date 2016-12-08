@@ -103,8 +103,10 @@ function varExample(centimeters) {
   // function scope
   if (centimeters > 100) {
     var meters = centimeters / 100;
+    var metersString = meters + ' meters';
   }
-  return meters;
+  console.log(meters);
+  return metersString;
 }
 					</code></pre>
 					<ul class='fragment'>
@@ -118,11 +120,14 @@ function varExample(centimeters) {
 					<h2><b><code>let</code></b> example</h2>
 					<pre><code class="hljs" data-trim contenteditable>
 function letExample(centimeters) {
+  let metersString;
   if (centimeters > 100) {
   // block scope
     let meters = centimeters / 100;
+    metersString = meters + ' meters';
   }
-  return meters;
+  console.log(meters);
+  return metersString;
 }
 					</code></pre>
 					<ul class='fragment'>
