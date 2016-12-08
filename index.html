@@ -291,6 +291,26 @@ arr1.push(...arr2);
 					</code></pre>
 				</section>
 
+				<!-- Rest Slide -->
+				<section>
+					<h2>...Rest</h2>
+					<ul class='fragment'>
+						<li>Used for destructuring arrays and objects</li>
+						<li><q>Opposite</q> of Spread</li>
+					</ul>
+					<pre><code class="hljs fragment wider" data-trim contenteditable>
+// ES5 function using ES6 ...Rest
+function multiply(multiplier, ...theArgs) {
+  return theArgs.map(function (element) {
+    return multiplier * element;
+  });
+}
+
+// "Arrowfied" Function
+const multiplyArrow = (multiplier, ...theArgs) => theArgs.map(element => multiplier * element);
+					</code></pre>
+				</section>
+
 				<!-- Cat GIF/Babel Slide -->
 				<section>
 					<h2>Ready to use ES6 in your applications?</h2>

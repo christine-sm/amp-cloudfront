@@ -1361,3 +1361,6 @@ html:-moz-full-screen-ancestor {
   cursor: pointer; }
   .exampleButton:hover {
     background-color: #f3d7ac; }
+
+.wider {
+  width: 950px; }
