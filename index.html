@@ -39,7 +39,7 @@
 					<ul>
 						<li>Application Developer at Blue Raster</li>
 						<li>Boston College &amp; General Assembly WDI Grad</li>
-						<li>Former Actor &amp; Fulbright Grant Recipient in Malaysia</li>
+						<li>Former Actor &amp; Fulbright Grantee in Malaysia</li>
 						<li>Loves Bad Puns &amp; Elephants</li>
 					</ul>
 					<div class='flex flex-justify-center'>
@@ -99,8 +99,8 @@ if () {
 				<section>
 					<h2><b><code>var</code></b> example</h2>
 					<pre><code class="hljs" data-trim contenteditable>
-function varExample() {
-  var centimeters = 150;
+function varExample(centimeters) {
+  // function scope
   if (centimeters > 100) {
     var meters = centimeters / 100;
   }
@@ -117,9 +117,9 @@ function varExample() {
 				<section>
 					<h2><b><code>let</code></b> example</h2>
 					<pre><code class="hljs" data-trim contenteditable>
-function letExample() {
-  let centimeters = 150;
+function letExample(centimeters) {
   if (centimeters > 100) {
+  // block scope
     let meters = centimeters / 100;
   }
   return meters;
@@ -295,8 +295,8 @@ arr1.push(...arr2);
 				<section>
 					<h2>...Rest</h2>
 					<ul class='fragment'>
-						<li>Used for destructuring arrays and objects</li>
-						<li><q>Opposite</q> of Spread</li>
+						<li>Represent an indefinite number of arguments as an array</li>
+						<li>Same syntax as Spread</li>
 					</ul>
 					<pre><code class="hljs fragment wider" data-trim contenteditable>
 // ES5 function using ES6 ...Rest
@@ -316,7 +316,8 @@ const multiplyArrow = (multiplier, ...theArgs) => theArgs.map(element => multipl
 					<h2>Ready to use ES6 in your applications?</h2>
 					<div class='fragment'>
 						<img src='http://i.imgur.com/4dSv0jH.gif' alt='cat typing'>
-						<h3><a href='https://babeljs.io/'> Babel JS Compiler</a></h3>
+						<h3><a href='https://babeljs.io/'>Babel JS Compiler</a></h3>
+						<h3><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla'>MDN Docs</a></h3>
 					</div>
 				</section>
 
