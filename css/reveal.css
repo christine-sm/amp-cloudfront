@@ -1364,3 +1364,11 @@ html:-moz-full-screen-ancestor {
 
 .wider {
   width: 950px; }
+
+.web-hosting__container {
+  max-height: 18em;
+  overflow: hidden; }
+
+.web-hosting {
+  height: 20em;
+  overflow: hidden; }
