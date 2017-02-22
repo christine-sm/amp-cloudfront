@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Supercharge Load Time: AWS CloudFront &amp; AMP</title>
+		<title>Supercharge Load Time: Amazon CloudFront &amp; AMP</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/night.css">
@@ -27,11 +27,11 @@
 
 				<!-- Intro -->
 				<section>
-					<h2>Supercharge Load Time:</h2>
-					<h2>AWS CloudFront &amp; AMP</h2>
+					<h2>Supercharge Your Load Time:</h2>
+					<h2>Amazon CloudFront &amp; AMP</h2>
 					<img src='http://i.imgur.com/fMV4Sey.jpg' alt='harry-potter-amp-logo'>
 					<p><q>The magic of distributed networks and optimized files</q></p>
-					<a href='http://www.christinemovius.com/amp-cloudfront'>christinemovius.com/amp-cloudfront</a>
+					<h3><a href='http://www.christinemovius.com/amp-cloudfront'>christinemovius.com/amp-cloudfront</a></h3>
 				</section>
 
 				<!-- Bio -->
@@ -63,14 +63,14 @@
 				<!-- The Problem 1: Loading Wheel GIF -->
 				<section>
 					<h2>But the only thing your user on the other side of globe sees is:</h2>
-					<img src="http://i.giphy.com/3oEjI6SIIHBdRxXI40.gif" alt="Spinng Loading Icon" />
+					<img class='fragment' src="http://i.giphy.com/3oEjI6SIIHBdRxXI40.gif" alt="Spinng Loading Icon" />
 				</section>
 
 				<!-- The Problem 1: Web Hosting Versus Content Delivery Network -->
 				<section>
 					<h4>Web Hosting Versus Content Delivery Network:</h4>
-					<div class="web-hosting__container">
-						<img class='web-hosting' src="https://blog.keycdn.com/blog/wp-content/uploads/2015/11/cdn-benefits-explained.webp" alt="Map of Web Hosting and Content Delivery Network" />
+					<div class="cropped-photo__container">
+						<img class='cropped-photo' src="https://blog.keycdn.com/blog/wp-content/uploads/2015/11/cdn-benefits-explained.webp" alt="Map of Web Hosting and Content Delivery Network" />
 					</div>
 				</section>
 
@@ -82,24 +82,57 @@
 				<!-- The Problem 2: Loading Wheel GIF -->
 				<section>
 					<h2>But the only thing your user on a mobile device STILL sees is:</h2>
-					<img src="http://i.giphy.com/3oEjI6SIIHBdRxXI40.gif" alt="Spinng Loading Icon" />
+					<img class='fragment' src="http://i.giphy.com/3oEjI6SIIHBdRxXI40.gif" alt="Spinng Loading Icon" />
 				</section>
 
 				<!-- The Problem 2: File Size Overload -->
 				<section>
 					<h3>File Size Overload:</h3>
-					<div class="web-hosting__container">
-						<img class='web-hosting' src="http://www.incomediary.com/wp-content/uploads/2015/10/web-performance-frontend-vs-backend-waterfall.png" alt="Map of Web Hosting and Content Delivery Network" />
+					<div class="cropped-photo__container">
+						<img class='cropped-photo' src="http://www.incomediary.com/wp-content/uploads/2015/10/web-performance-frontend-vs-backend-waterfall.png" alt="Files Take Long Time to Load" />
 					</div>
 				</section>
 
 				<!-- The Problem 2: Mobile Devices > Desktops -->
+				<!-- TODO: Find Image/Chart -->
 				<section>
 					<h3>Mobile Phone Usage > Desktop Usage</h3>
 					<ul class='fragment'>
 						<li>The web is accessed by mobile phones more often the desktop computers</li>
 						<li>On a global scale, most mobile phone users have limited cellular data volume and speed</li>
 						<li>Content is often not optimized for mobile devices</li>
+					</ul>
+				</section>
+
+				<!-- Amazon CloudFront & AMP Logos -->
+				<section>
+					<h2>Amazon CloudFront &amp; AMP</h2>
+					<div class='flex flex-justify-center'>
+						<img class='logo-imgs' src='http://cloudacademy.com/blog/wp-content/uploads/2014/05/cloudfront_logo.jpg' alt='Amazon CloudFront Logo'>
+						<img class='logo-imgs' src='http://edgeofthewebradio.com/wp-content/uploads/2016/09/amp-logo-google.jpg' alt='Accelerated Mobile Pages Logo'>
+					</div>
+				</section>
+
+				<!-- Amazon CloudFront -->
+				<section>
+					<!-- <h3>Amazon CloudFront</h3> -->
+					<img class='logo-imgs' src='http://cloudacademy.com/blog/wp-content/uploads/2014/05/cloudfront_logo.jpg' alt='Amazon CloudFront Logo'>
+					<ul class='fragment'>
+						<li>Powerful CDN service designed to accelerate web content<br/> delivery worldwide</li>
+						<li>Integrates easily with other AWS products</li>
+						<li>Supports <b>Gzip</b> compression</li>
+					</ul>
+				</section>
+
+				<!-- TODO: 'Demo' Screenshots of Enabling CloudFront in AWS Console -->
+
+				<!-- AMP -->
+				<section>
+					<!-- <h3>Amazon CloudFront</h3> -->
+					<img class='logo-imgs' src='http://edgeofthewebradio.com/wp-content/uploads/2016/09/amp-logo-google.jpg' alt='Accelerated Mobile Pages Logo'>
+					<ul class='fragment'>
+						<li>Google AMP Cache provides an incredibly fast CDN to deliver all valid AMP pages across the globe</li>
+						<li>Custom HTML and JavaScript: encourages developers to create mobile-optimized content, use best performance practices, and manage resource loading</li>
 					</ul>
 				</section>
 

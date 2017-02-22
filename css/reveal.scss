@@ -1422,6 +1422,11 @@ html:-moz-full-screen-ancestor {
 	margin: 1em;
 }
 
+.reveal section img.logo-imgs {
+	height: 9em;
+	margin: 1em;
+}
+
 .flex {
 	display: flex;
 }
@@ -1449,12 +1454,12 @@ html:-moz-full-screen-ancestor {
 	width: 950px;
 }
 
-.web-hosting__container {
+.cropped-photo__container {
 	max-height: 18em;
 	overflow: hidden;
 }
 
-.web-hosting {
+.cropped-photo {
 	height: 20em;
 	overflow: hidden;
 }
