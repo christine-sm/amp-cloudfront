@@ -115,16 +115,34 @@
 
 				<!-- Amazon CloudFront -->
 				<section>
-					<!-- <h3>Amazon CloudFront</h3> -->
+					<h3><a href='http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html' target='_blank'>Amazon CloudFront</a></h3>
 					<img class='logo-imgs' src='http://cloudacademy.com/blog/wp-content/uploads/2014/05/cloudfront_logo.jpg' alt='Amazon CloudFront Logo'>
 					<ul class='fragment'>
 						<li>Powerful CDN service designed to accelerate web content<br/> delivery worldwide</li>
-						<li>Integrates easily with other AWS products</li>
+						<li>Integrates easily with other AWS products (e.g. S3)</li>
 						<li>Supports <b>Gzip</b> compression</li>
 					</ul>
 				</section>
 
-				<!-- TODO: 'Demo' Screenshots of Enabling CloudFront in AWS Console -->
+				<section>
+					<h2>Set Up Amazon CloudFront</h2>
+					<h4><a href='http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStarted.html' target='_blank'>Getting Started Guide</a></h4>
+					<img src="http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/images/how-you-configure-cf.png" alt="Amazon CloudFront Set-Up Diagram">
+				</section>
+
+				<section>
+					<h2>Amazon CloudFront <br/> Content Distribution</h2>
+					<img src="http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/images/how-cloudfront-delivers-content.png" alt="Amazon CloudFront Content Distribution Diagram">
+				</section>
+
+				<section>
+					<h2>Don't Forget: Time to Live (TTL)</h2>
+					<h3><a href='http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Expiration.html' target='_blank'>Specifying TTL</a></h3>
+					<ul class='fragment'>
+						<li>Development: <b>SHORT</b> TTL to see changes in code</li>
+						<li>Production: <b>LONG</b> TTL to improve performance</li>
+					</ul>
+				</section>
 
 				<!-- AMP -->
 				<section>
@@ -135,6 +153,7 @@
 						<li>Custom HTML and JavaScript: encourages developers to create mobile-optimized content, use best performance practices, and manage resource loading</li>
 					</ul>
 				</section>
+
 
 				<!-- ES6 Feature Overview -->
 				<!-- <section>
