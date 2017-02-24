@@ -132,10 +132,18 @@
 
 				<section>
 					<h2>Don't Forget: Time to Live (TTL)</h2>
-					<div class='fragment'>
-						<p>Development: <b>SHORT</b> TTL to see changes in code</p>
-						<p>Production: <b>LONG</b> TTL to improve performance</p>
-					</div>
+					<ul class='fragment'>
+						<li>Development: <b>SHORT</b> TTL to see changes in code</li>
+						<li>Production: <b>LONG</b> TTL to improve performance</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>But What If I Need to Immediately Overwrite My Old Content ☠?</h2>
+					<ul class='fragment'>
+						<li>Create an <b>Invalidation</b>: sends message to all Edge Locations that they need to pull new content from Origin upon next request</li>
+						<li>Costs extra $$</li>
+					</ul>
 				</section>
 
 				<!-- AMP -->
@@ -158,7 +166,7 @@
 					<ul>
 						<li>Demo: Turn basic HTML page into AMP page, step by step showing validation process in console and with Chrome extension</li>
 						<li>CloudFront vs. AMP Pros and Cons</li>
-						<li>Best Mobile Optimization Practices to Keep in Mind Even if You Don't Use Either Tool</li>
+						<li>Best Mobile Optimization Practices to Keep in Mind Even if You Don't Use Either Tool (minify/compress files, avoid library overload, etc)</li>
 						<li>List of Resources/Links</li>
 					</ul>
 				</section>
