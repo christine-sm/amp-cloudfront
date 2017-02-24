@@ -36,7 +36,7 @@
 
 				<!-- Bio -->
 				<section>
-					<h2>I'm Christine</h2>
+					<h2>I'm Christine Movius</h2>
 					<ul>
 						<li>Application Developer at <b>Blue Raster</b> (Arlington, VA)</li>
 						<li>Boston College &amp; General Assembly Grad</li>
@@ -57,7 +57,7 @@
 				<!-- The Problem 1: Map GIF -->
 				<section>
 					<h2>You want your user to see this:</h2>
-					<img src="http://i.giphy.com/DO456foL5mJ8s.gif" alt="Palm Oil Mapping Application" />
+					<img class='map-gif' src="http://i.giphy.com/DO456foL5mJ8s.gif" alt="Palm Oil Mapping Application" />
 				</section>
 
 				<!-- The Problem 1: Loading Wheel GIF -->
@@ -94,15 +94,10 @@
 				</section>
 
 				<!-- The Problem 2: Mobile Devices > Desktops -->
-				<!-- TODO: Find Image/Chart -->
 				<section>
 					<h3>Mobile Phone Usage > Desktop Usage</h3>
-					<ul class='fragment'>
-						<li>The web is accessed by mobile phones more often the desktop computers</li>
-						<li>TODO: Get Image of Chart where mobile internet access surpasses desktop internet access</li>
-						<li>On a global scale, most mobile phone users have limited cellular data volume and speed</li>
-						<li>Content is often not optimized for mobile devices</li>
-					</ul>
+					<img src="http://gs.statcounter.com/download/internet_usage_2009_2016_ww.png" alt="Palm Oil Mapping Application" />
+					<a href='http://gs.statcounter.com/platform-market-share/desktop-mobile-tablet' target='_blank'>Live Chart</a>
 				</section>
 
 				<!-- Amazon CloudFront & AMP Logos -->
@@ -127,7 +122,7 @@
 
 				<section>
 					<h2>Set Up Amazon CloudFront</h2>
-					<h4><a href='http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStarted.html' target='_blank'>Getting Started Guide</a></h4>
+					<!-- <h4><a href='http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStarted.html' target='_blank'>Getting Started Guide</a></h4> -->
 					<img src="http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/images/how-you-configure-cf.png" alt="Amazon CloudFront Set-Up Diagram">
 				</section>
 
@@ -138,11 +133,15 @@
 
 				<section>
 					<h2>Don't Forget: Time to Live (TTL)</h2>
-					<h3><a href='http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Expiration.html' target='_blank'>Specifying TTL</a></h3>
-					<ul class='fragment'>
+					<!-- <h3><a href='http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Expiration.html' target='_blank'>Specifying TTL</a></h3> -->
+					<div class='fragment'>
+						<p>Development: <b>SHORT</b> TTL to see changes in code</p>
+						<p>Production: <b>LONG</b> TTL to improve performance</p>
+					</div>
+					<!-- <ul class='fragment'>
 						<li>Development: <b>SHORT</b> TTL to see changes in code</li>
 						<li>Production: <b>LONG</b> TTL to improve performance</li>
-					</ul>
+					</ul> -->
 				</section>
 
 				<!-- AMP -->
@@ -157,12 +156,22 @@
 
 				<section>
 					<h3>Presentation TODOs</h3>
-					<ul class='fragment'>
-						<li>AMP Getting Started</li>
+					<ul>
 						<li>Demo: Turn basic HTML page into AMP page, step by step showing validation process in console and with Chrome extension</li>
 						<li>Shortcomings of JS with AMP</li>
 						<li>CloudFront vs. AMP Pros and Cons</li>
 						<li>Best Mobile Optimization Practices to Keep in Mind Even if You Don't Use Either Tool</li>
+						<li>List of Resources/Links</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Helpful Resources</h3>
+					<ul>
+						<li><a href='https://www.oreilly.com/ideas/mobile-web-performance-anti-patterns?utm_medium=social&utm_source=twitter.com&utm_campaign=lgen&utm_content=tw+webops+article+as' target='_blank'>Mobile Web Performance Anti-Patterns</a></li>
+						<li><a href='http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStarted.html' target='_blank'>Amazon CloudFront Getting Started Guide</a></li>
+						<li><a href='https://www.ampproject.org/docs/get_started/create' target='_blank'>Create Your First AMP Page</a></li>
+						<li><a href='https://tools.pingdom.com/' target='_blank'>Pingdom Website Speed Test</a></li>
 					</ul>
 				</section>
 

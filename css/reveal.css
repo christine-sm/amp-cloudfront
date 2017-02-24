@@ -1343,6 +1343,9 @@ html:-moz-full-screen-ancestor {
   height: 9em;
   margin: 1em; }
 
+.reveal section img.map-gif {
+  height: 12em; }
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
