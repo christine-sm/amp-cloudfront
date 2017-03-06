@@ -1379,3 +1379,6 @@ html:-moz-full-screen-ancestor {
 .cropped-photo {
   height: 20em;
   overflow: hidden; }
+
+.chart-imgs {
+  height: 18em; }
